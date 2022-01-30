@@ -1,0 +1,991 @@
+@import "nullstyle.scss"
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap')
+
+
+html
+	font-family: "Hind"
+	color: #fff
+	overflow-x:  hidden
+	background: #f9f9fb
+body
+	max-width: 1550px
+	text-align: center
+
+
+header
+	background: #212429
+	padding: 0 3%
+	color: #fff
+	text-align: center
+
+	button
+		background: transparent
+		padding-bottom: 15px
+		padding-top: 15px
+		font-size: 15px
+		color: #fff
+	button.toogle
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		float: left
+
+	button.search
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		float: right
+
+	button.facb
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		border-left: none
+		border-right: none
+		float: right
+
+	button.twit
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		border-left: none
+		float: right
+
+	button.tub
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		border-left: none
+		float: right
+	
+	button.wifi
+		border: 1px solid #3c3c3c
+		border-bottom: none
+		border-top: none
+		float: right
+	
+	a
+		color: #fff		
+		font-size: 23px
+		line-height: 2.3
+
+	i
+		padding: 0 10px
+
+
+
+section.header
+	background: linear-gradient(to bottom, #212429 50%, #f7f7f7 50%) 
+
+.header
+	color: #fff
+	margin: 0 3%
+	text-align: center
+
+	p:nth-child(1)
+		font-weight: lighter
+	.header-text
+		letter-spacing: 3px	
+		text-align: left
+		position: absolute
+		transform: translate(10vw, 15vw)
+		z-index: 2
+		font-size: 2vw
+		p
+			font-weight: 700
+	.h1
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 3vw
+	.squares
+		display: flex
+		justify-content: center
+		.square
+			width: 1vw
+			height: 1vw
+			margin: 4px
+			margin-bottom: 10px
+			border: 1px solid #fff
+			transform: rotate(90deg)
+
+		.square:nth-child(1)	
+			background: #fff
+
+	
+	.switching
+		height: 50px
+		padding: 10px
+		font-size: 1vw
+		letter-spacing: 3px	
+		float: right
+		cursor: pointer
+		transform: translate(3vw, -19.5vw) rotate(-90deg)
+	.arrows
+		display: flex
+
+	.fa-long-arrow-alt-left
+		padding-right: 10px
+
+	.fa-long-arrow-alt-right
+		padding-left: 10px
+
+	.current-slide
+		max-height: 540px
+		overflow: hidden
+		position: relative
+		text-align: center
+		margin: 0 auto
+		img
+			width: 100%
+
+	.slider-line
+		transition: 0.9s ease
+		display: flex
+		flex-direction: column
+			
+
+.subscribe
+	background: #f7f7f7
+	padding-top: 30px 
+	padding-left: 70px
+	padding-right: 70px
+	padding-bottom: 20px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	.col-xl-3
+		margin-left: 40px
+	
+
+	
+	.h2
+		font-size: 23px
+		font-family: "Hind"
+		flex-weight: lighter
+		max-width: 100px
+		color: #212121
+		margin-right: 30px
+
+
+
+	input
+		background: #fff
+		border: none
+		height: 50px
+		padding-left: 30px
+		padding-right: 70px
+
+	button
+		border: none
+		background: #212121
+		color: #fff
+		height: 50px
+		padding: 0 70px
+
+
+
+.cards
+	background: #f9f9fb
+	padding-top: 100px
+	padding-bottom: 100px
+	line-height: 1.5
+
+	.row
+		text-align: center
+		display: flex
+		justify-content: center	
+
+	.card-2, .card:nth-child(2)
+		margin-top: 250px
+
+	.card:nth-child(4), .card-4
+		padding-bottom: 500px
+
+	.card-5, .card:nth-child(5)
+		margin-top: -60px
+		padding-bottom: 500px
+
+	.card-6, .card:nth-child(6)
+		background: #212429
+		margin-top: 40px
+
+		p.card-text
+			color: #fff
+			font-weight: 100
+
+		div
+			p
+				font-weight: 500
+				padding-top: 10px
+				padding-bottom: 10px
+
+	.card-7, .card:nth-child(7)
+		box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89)
+		padding-top: 300px
+		margin-top: -125px	
+
+	.card-9, .card:nth-child(9)
+		background-image: url('../img/Card-BG-A.png')
+		background-repeat: no-repeat
+		background-size: cover
+		.button1
+			background: transparent
+			margin-bottom: 0
+		input
+			background: transparent
+
+	.card-10, .card:nth-child(10)
+		margin-top: 107px
+		.card-text
+			padding-bottom: 40px
+
+	.card-11, .card:nth-child(11)
+		background: #212429
+		color: #fff
+		padding: 0
+		padding-bottom: 217px
+		a
+			font-family: "Hind Light"
+			color: #fff
+			font-weight: 100
+			text-decoration: underline
+			font-size: 16px
+			padding-bottom: 40px
+			letter-spacing: 1px
+		.white-band
+			padding: 23px 0
+			background: #fff
+
+	.card-12, .card:nth-child(12)
+		img
+			margin-top: 30px
+			margin-bottom: 96px
+
+
+	.card
+		text-align: center
+		border: none
+		background: #fff
+		margin: 13px
+		height: 100%
+		width: 300px
+		padding: 20px
+
+		p
+			font-size: 12px
+			color: #999999
+		.h3
+			font-size: 20px
+			color: #000
+			padding: 0
+			margin: 0
+			padding: 10px 0
+			font-weight: 900
+
+
+		.card-text
+			font-size: 15px
+			padding-top: 30px
+			color: #464646
+			font-weight: lighter
+			
+
+		.button1
+			border: none
+			border-left: 1px solid silver
+			border-right: 1px solid silver
+			background: #fff
+			margin-top: 30px 
+			margin-bottom: 40px
+
+		.button2
+			border: none
+			border-left: 1px solid silver
+			border-right: 1px solid silver
+			background: #fff
+			margin-bottom: 40px
+
+		input
+			border: none
+			margin: 0
+			padding: 0
+			font-size: 11px
+
+		i
+			font-size: 10px
+			padding: 0 5px
+
+		span
+			border-top: 1px solid silver
+			padding-top: 15px
+
+		.fa-pencil-alt, .fa-image, .fa-music
+			font-size: 25px
+			padding-bottom: 30px
+			margin-top: -30px
+
+
+		.fa-quote-right
+			margin-bottom: 10px
+			margin-top: -30px
+			color: #000
+			font-size: 20px
+
+		.fa-link	
+			color: #000
+			font-size: 25px
+			padding-bottom: 30px
+			margin-top: -15px
+
+		.fa-windows
+			font-size: 25px
+			margin-top: -10px
+			color: #000
+
+
+.footer
+	background: #212429
+	padding-bottom: 50px
+	color: #fff
+	line-height: 1.4
+	.h4
+		padding-bottom: 20px
+		padding-top: 30px
+		font-size: 20px
+	.about
+		.autograph
+			margin-top: 10px
+			background: #3a3c49
+			height: 120px
+			min-width: 230px
+			p
+				font-size: 30px
+				font-family: 'Mrs Saint Delafield', cursive
+				transform: rotate(-14deg)
+				padding-top: 27%
+				padding-left: 50%
+	.tweets
+		p
+			font-weight: 100
+
+		i
+			font-size: 10px
+			margin-right: 7px
+		
+
+		.tweet-1
+			margin-top: 10px
+			padding-bottom: 30px
+			margin-left: 15px
+		.tweet-2
+			margin-top: 10px
+			margin-left: 15px
+
+	.instagram
+		.instagram-blog
+			.insta-1
+				height: 88px
+				width: 100px
+				background: #fff
+				border: 0.1em solid black
+				float: left
+			.insta-2
+				height: 88px
+				width: 100px
+				background: #fff
+				border: 0.1em solid black
+				float: left
+			.insta-3
+				height: 88px
+				width: 100px
+				background: #fff
+				border: 0.1em solid black
+				float: left
+			.insta-4
+				height: 88px
+				width: 100px
+				background: #fff
+				border: 0.1em solid black
+				float: left
+			.insta-5
+				height: 88px
+				width: 100px
+				background: #fff
+				border: 0.1em solid black	
+				float: left
+			.insta-6
+				height: 88px
+				width: 100px			
+				background: #fff
+				border: 0.1em solid black
+				float: left
+	.comment
+		.band
+			margin: 7px 0
+			border-top: 1px solid #65676a
+
+		.commentator
+			padding: 0
+			padding-bottom: 10px
+
+.copyright
+	text-transform: uppercase
+	text-align: center
+	color: #808081
+	background: #17191c
+	padding: 8px
+
+@media screen and (max-width: 1040px)
+	
+	.container:nth-child(2)
+		width: 450px
+		float: right
+		display: flex
+
+		transform: rotate(-90deg)
+		font-size: 14px
+		letter-spacing: 3px
+
+		.fa-long-arrow-alt-left
+			padding-right: 10px
+
+		.fa-long-arrow-alt-right
+			padding-left: 10px
+
+@media screen and (max-width: 1199px)
+
+	.subscribe
+		background: #f7f7f7
+		padding-top: 30px 
+		padding-left: 70px
+		padding-right: 70px
+
+
+		.h2
+			font-size: 23px
+			font-family: "Hind"
+			flex-weight: lighter
+			max-width: 100px
+			color: #212121
+			margin-right: 30px
+			margin: 0 auto
+
+
+
+		input
+			background: #fff
+			border: none
+			padding-right: 50px
+			padding-left: 10px
+			height: 50px
+			margin: 10px 0
+
+
+		button
+			border: none
+			background: #212121
+			color: #fff
+			padding-top: 60px
+			padding: 5px 30px
+			height: 50px
+
+
+
+@media screen and (max-width: 1250px)
+	
+
+	.footer
+		.about
+			.autograph
+				p
+					font-size: 24px
+					padding-top: 30%
+					padding-left: 46%
+		.instagram
+			.instagram-blog
+				.insta-1
+					height: 61px
+					width: 70px
+
+				.insta-2
+					height: 61px
+					width: 70px
+
+				.insta-3
+					height: 61px
+					width: 70px
+
+				.insta-4
+					height: 61px
+					width: 70px
+
+				.insta-5
+					height: 61px
+					width: 70px
+
+				.insta-6
+					height: 61px
+					width: 70px
+
+@media screen and (max-width: 1303px)
+
+	.cards
+		background: #f9f9fb
+		padding-top: 100px
+		padding-bottom: 100px
+		line-height: 1.5
+
+		.row
+			text-align: center
+			display: flex
+			justify-content: center	
+
+		.card-2, .card:nth-child(2)
+			margin-top: 100px 
+
+
+		.card-4
+			padding-bottom: 500px
+
+		.card-5, .card:nth-child(5)
+			margin-top: -30px
+			padding-bottom: 500px
+
+		.card-6
+			background: #212429
+			margin-top: 40px
+
+			p.card-text
+				color: #fff
+				font-weight: 100
+
+			div
+				p
+					font-weight: 500
+					padding-top: 10px
+					padding-bottom: 10px
+
+		.card-7, .card:nth-child(7)
+			box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89)
+			padding-top: 300px
+			margin-top: 60px	
+
+		.card-9, .card:nth-child(9)
+			background-image: url('../img/Card-BG-A.png')
+			background-repeat: no-repeat
+			background-size: cover
+			margin-top: -100px
+			.button1
+				background: transparent
+				margin-bottom: 0
+			input
+				background: transparent
+
+		.card-10, .card:nth-child(10)
+			margin-top: 30px
+			.card-text
+				padding-bottom: 40px
+
+		.card-11, .card:nth-child(11)
+			margin-top: -50px
+			background: #212429
+			color: #fff
+			padding: 0
+			padding-bottom: 217px
+			a
+				font-family: "Hind Light"
+				color: #fff
+				font-weight: 100
+				text-decoration: underline
+				font-size: 16px
+				padding-bottom: 40px
+				letter-spacing: 1px
+			.white-band
+				padding: 23px 0
+				background: #fff
+
+		.card-12, .card:nth-child(12)
+			margin-top: -100px
+			img
+				margin-top: 30px
+				margin-bottom: 96px
+
+@media screen and (max-width: 1092px)
+
+	.cards
+		background: #f9f9fb
+		padding-top: 100px
+		padding-bottom: 100px
+		line-height: 1.5
+
+		.row
+			text-align: center
+			display: flex
+			justify-content: center	
+
+		.card-2, .card:nth-child(2)
+			margin-top: 100px 
+
+
+		.card-4
+			padding-bottom: 500px
+
+		.card-5, .card:nth-child(5)
+			margin-top: -30px
+			padding-bottom: 500px
+
+		.card-6
+			background: #212429
+			margin-top: 40px
+
+			p.card-text
+				color: #fff
+				font-weight: 100
+
+			div
+				p
+					font-weight: 500
+					padding-top: 10px
+					padding-bottom: 10px
+
+		.card-7, .card:nth-child(7)
+			box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89)
+			padding-top: 300px
+
+
+		.card-9, .card:nth-child(9)
+			background-image: url('../img/Card-BG-A.png')
+			background-repeat: no-repeat
+			background-size: cover
+			margin-top: 30px
+			margin-bottom: 30px
+			.button1
+				background: transparent
+				margin-bottom: 0
+			input
+				background: transparent
+
+		.card-10, .card:nth-child(10)
+			margin-top: 0
+			.card-text
+				padding-bottom: 40px
+
+		.card-11, .card:nth-child(11)
+			background: #212429
+			color: #fff
+			padding: 0
+			padding-bottom: 217px
+			margin-top: 0
+
+			a
+				font-family: "Hind Light"
+				color: #fff
+				font-weight: 100
+				text-decoration: underline
+				font-size: 16px
+				padding-bottom: 40px
+				letter-spacing: 1px
+			.white-band
+				padding: 23px 0
+				background: #fff
+
+		.card-12, .card:nth-child(12)
+			margin-top: -100px
+			img
+				margin-top: 30px
+				margin-bottom: 96px
+
+@media screen and (max-width: 793px)
+	
+	.cards
+		background: #f9f9fb
+		padding-top: 100px
+		padding-bottom: 100px
+		line-height: 1.5
+
+		.row
+			text-align: center
+			display: flex
+			justify-content: center	
+
+		.card-2, .card:nth-child(2)
+			margin-top: 100px 
+
+
+		.card-4
+			padding-bottom: 500px
+			margin-bottom: 80px
+
+		.card-5, .card:nth-child(5)
+			padding-bottom: 500px
+
+		.card-6
+			background: #212429
+			margin-top: 40px
+
+			p.card-text
+				color: #fff
+				font-weight: 100
+
+			div
+				p
+					font-weight: 500
+					padding-top: 10px
+					padding-bottom: 10px
+
+		.card-7, .card:nth-child(7)
+			box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89)
+			padding-top: 300px
+			margin-bottom: 40px
+
+
+		.card-9, .card:nth-child(9)
+			background-image: url('../img/Card-BG-A.png')
+			background-repeat: no-repeat
+			background-size: cover
+			margin-top: 50px
+			margin-bottom: 50px
+			.button1
+				background: transparent
+				margin-bottom: 0
+			input
+				background: transparent
+
+		.card-10, .card:nth-child(10)
+			margin-top: 0
+			margin-bottom: 50px
+			.card-text
+				padding-bottom: 40px
+
+		.card-11, .card:nth-child(11)
+			background: #212429
+			color: #fff
+			padding: 0
+			padding-bottom: 217px
+			margin-top: 0
+			margin-bottom: 150px
+
+			a
+				font-family: "Hind Light"
+				color: #fff
+				font-weight: 100
+				text-decoration: underline
+				font-size: 16px
+				padding-bottom: 40px
+				letter-spacing: 1px
+			.white-band
+				padding: 23px 0
+				background: #fff
+
+		.card-12, .card:nth-child(12)
+			margin-top: -100px
+			img
+				margin-top: 30px
+				margin-bottom: 96px
+
+@media screen and (max-width: 1076px)
+	
+	.footer
+		p
+			font-size: 13px
+		.about
+			p
+				font-size: 13px
+			.autograph
+				margin-top: 10px
+				background: #3a3c49
+				height: 100px
+				min-width: 120px
+				p
+					font-size: 20px
+					font-family: 'Mrs Saint Delafield', cursive
+					transform: rotate(-14deg)
+					padding-top: 27%
+					padding-left: 50%
+	.tweets	
+		span
+			font-size: 15px
+		p
+			font-size: 13px
+			font-weight: 100
+
+		i
+			display: none
+			font-size: 5px
+			margin-right: 7px
+		
+
+		.tweet-1
+			font-size: 13px
+			margin-top: 10px
+			padding-bottom: 30px
+			margin-left: 15px
+		.tweet-2
+			font-size: 13px
+			margin-top: 10px
+			margin-left: 15px
+	.instagram
+		.instagram-blog
+			max-width: 200px
+			max-height: 100px
+			.insta-1
+				height: 42.7px
+				width: 49px
+
+			.insta-2
+				height: 42.7px
+				width: 49px
+
+			.insta-3
+				height: 42.7px
+				width: 70px
+
+			.insta-4
+				height: 42.7px
+				width: 49px
+
+			.insta-5
+				height: 42.7px
+				width: 49px
+
+			.insta-6
+				height: 42.7px
+				width: 49px
+
+@media screen and (max-width: 844px)
+
+	.footer
+		p
+			font-size: 13px
+
+		background: #212429
+		padding-bottom: 50px
+		color: #fff
+		line-height: 1.4
+		.h4
+			padding-bottom: 20px
+			padding-top: 30px
+			font-size: 20px
+		.about
+			.autograph
+				margin-top: 10px
+				background: #3a3c49
+				height: 100px
+				min-width: 120px
+				max-width: 300px
+				p
+					font-size: 25px
+					font-family: 'Mrs Saint Delafield', cursive
+					transform: rotate(-14deg)
+					padding-top: 20%
+					padding-left: 55%
+		.tweets
+			p
+				font-weight: 100
+
+			i
+				font-size: 10px
+				margin-right: 7px
+			
+
+			.tweet-1
+				margin-top: 10px
+				padding-bottom: 30px
+				margin-left: 15px
+			.tweet-2
+				margin-top: 10px
+				margin-left: 15px
+
+		.instagram
+			.instagram-blog
+				max-width: 250px
+				max-height: 300px
+				.insta-1
+					height: 61px
+					width: 70px
+
+				.insta-2
+					height: 61px
+					width: 70px
+
+				.insta-3
+					height: 61px
+					width: 70px
+
+				.insta-4
+					height: 61px
+					width: 70px
+
+				.insta-5
+					height: 61px
+					width: 70px
+
+				.insta-6
+					height: 61px
+					width: 70px
+
+@media screen and (max-width: 735px)
+	
+	.footer
+		p
+			font-size: 13px
+		.about
+			p
+				font-size: 13px
+			.autograph
+				margin-top: 10px
+				background: #3a3c49
+				height: 100px
+				min-width: 120px
+				p
+					font-size: 25px
+					font-family: 'Mrs Saint Delafield', cursive
+					transform: rotate(-14deg)
+					padding-top: 27%
+					padding-left: 50%
+
+
+
+
+
+
+	
+	button.facb
+		display: none
+
+	button.twit
+		display: none
+
+	button.tub
+		display: none
+	
+	button.wifi
+		display: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
