@@ -1,0 +1,1333 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button:focus, input:focus, textarea:focus {
+  outline: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+audio,
+canvas,
+video {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  max-width: 100%;
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address styling not present in IE 7/8/9, Firefox 3, and Safari 4.
+ * Known issue: no IE 6 support.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using
+ *    `em` units.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-size: 100%; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -ms-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/**
+ * 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3.
+ * 2. Improve image quality when scaled in IE 7.
+ */
+img {
+  border: 0; /* 1 */
+  -ms-interpolation-mode: bicubic; /* 2 */
+}
+
+/**
+ * Address margin not present in IE 6/7/8/9, Safari 5, and Opera 11.
+ */
+figure {
+  margin: 0;
+}
+
+/**
+ * Correct margin displayed oddly in IE 6/7.
+ */
+form {
+  margin: 0;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct color not being inherited in IE 6/7/8/9.
+ * 2. Correct text not wrapping in Firefox 3.
+ * 3. Correct alignment displayed oddly in IE 6/7.
+ */
+legend {
+  border: 0; /* 1 */
+  padding: 0;
+  white-space: normal; /* 2 */
+  *margin-left: -7px; /* 3 */
+}
+
+/**
+ * 1. Correct font size not being inherited in all browsers.
+ * 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improve appearance and consistency in all browsers.
+ */
+button,
+input,
+select,
+textarea {
+  font-size: 100%; /* 1 */
+  margin: 0; /* 2 */
+  vertical-align: baseline; /* 3 */
+  *vertical-align: middle; /* 3 */
+}
+
+/**
+ * Address Firefox 3+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button,
+input {
+  line-height: normal;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 6+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ * 4. Remove inner spacing in IE 7 without affecting normal text inputs.
+ *    Known issue: inner spacing remains in IE 6.
+ */
+button,
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+  *overflow: visible; /* 4 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 1. Address box sizing set to content-box in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ * 3. Remove excess padding in IE 7.
+ *    Known issue: excess padding remains in IE 6.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+  *height: 13px; /* 3 */
+  *width: 13px; /* 3 */
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Remove inner padding and border in Firefox 3+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Remove default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto; /* 1 */
+  vertical-align: top; /* 2 */
+}
+
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  padding: 0.2em 0;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+html {
+  font-family: "Hind";
+  color: #fff;
+  overflow-x: hidden;
+  background: #f9f9fb;
+}
+
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header {
+  background: #212429;
+  padding: 0 3%;
+  color: #fff;
+  text-align: center;
+}
+header button {
+  background: transparent;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 15px;
+  color: #fff;
+}
+header button.toogle {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  float: left;
+}
+header button.search {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  float: right;
+}
+header button.facb {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  float: right;
+}
+header button.twit {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  float: right;
+}
+header button.tub {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  float: right;
+}
+header button.wifi {
+  border: 1px solid #3c3c3c;
+  border-bottom: none;
+  border-top: none;
+  float: right;
+}
+header a {
+  color: #fff;
+  font-size: 23px;
+  line-height: 2.3;
+}
+header i {
+  padding: 0 10px;
+}
+
+section.header {
+  background: linear-gradient(to bottom, #212429 50%, #f7f7f7 50%);
+}
+
+.header {
+  color: #fff;
+  margin: 0 3%;
+  text-align: center;
+}
+.header p:nth-child(1) {
+  font-weight: lighter;
+}
+.header img {
+  position: relative;
+}
+.header .header-text {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  bottom: 0;
+  padding: 7% 7%;
+  text-align: left;
+  letter-spacing: 3px;
+  font-size: 2vw;
+}
+.header .header-text p {
+  font-weight: 700;
+}
+.header .h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vw;
+}
+.header .squares {
+  display: flex;
+  justify-content: center;
+}
+.header .squares .square {
+  width: 1vw;
+  height: 1vw;
+  margin: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #fff;
+  transform: rotate(90deg);
+}
+.header .squares .square:nth-child(1) {
+  background: #fff;
+}
+.header .switching {
+  position: absolute;
+  z-index: 2;
+  right: -25px;
+  top: 40%;
+  transform: rotate(-90deg);
+  height: 50px;
+  padding: 10px;
+  font-size: 1.5vw;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.header .arrows {
+  display: flex;
+}
+.header .fa-long-arrow-alt-left {
+  padding-right: 10px;
+}
+.header .fa-long-arrow-alt-right {
+  padding-left: 10px;
+}
+.header .current-slide {
+  max-height: 540px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.header .current-slide img {
+  width: 100%;
+}
+.header .slider-line {
+  transition: 0.9s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe {
+  background: #f7f7f7;
+  padding-top: 30px;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.subscribe .col-xl-3 {
+  margin-left: 40px;
+}
+.subscribe .h2 {
+  font-size: 23px;
+  font-family: "Hind";
+  flex-weight: lighter;
+  max-width: 100px;
+  color: #212121;
+  margin-right: 30px;
+}
+.subscribe input {
+  background: #fff;
+  border: none;
+  height: 50px;
+  padding-left: 30px;
+  padding-right: 70px;
+}
+.subscribe button {
+  border: none;
+  background: #212121;
+  color: #fff;
+  height: 50px;
+  padding: 0 70px;
+}
+
+.cards {
+  background: #f9f9fb;
+  padding: 100px 10%;
+  line-height: 1.5;
+}
+.cards .row {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.cards .card-2, .cards .card:nth-child(2) {
+  margin-top: 100px;
+}
+.cards .card:nth-child(4), .cards .card-4 {
+  padding-bottom: 350px;
+}
+.cards .card-5, .cards .card:nth-child(5) {
+  margin-top: -60px;
+  padding-bottom: 500px;
+}
+.cards .card-6, .cards .card:nth-child(6) {
+  background: #212429;
+  margin-top: 40px;
+}
+.cards .card-6 p.card-text, .cards .card:nth-child(6) p.card-text {
+  color: #fff;
+  font-weight: 100;
+}
+.cards .card-6 div p, .cards .card:nth-child(6) div p {
+  font-weight: 500;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.cards .card-7, .cards .card:nth-child(7) {
+  box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89);
+  padding-top: 300px;
+  margin-top: -50px;
+}
+.cards .card-9, .cards .card:nth-child(9) {
+  background-image: url("../img/Card-BG-A.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cards .card-9 .button1, .cards .card:nth-child(9) .button1 {
+  background: transparent;
+  margin-bottom: 0;
+}
+.cards .card-9 input, .cards .card:nth-child(9) input {
+  background: transparent;
+}
+.cards .card-10, .cards .card:nth-child(10) {
+  margin-top: 107px;
+}
+.cards .card-10 .card-text, .cards .card:nth-child(10) .card-text {
+  padding-bottom: 40px;
+}
+.cards .card-11, .cards .card:nth-child(11) {
+  background: #212429;
+  color: #fff;
+  padding: 0;
+  padding-bottom: 217px;
+}
+.cards .card-11 a, .cards .card:nth-child(11) a {
+  font-family: "Hind Light";
+  color: #fff;
+  font-weight: 100;
+  text-decoration: underline;
+  font-size: 16px;
+  padding-bottom: 40px;
+  letter-spacing: 1px;
+}
+.cards .card-11 .white-band, .cards .card:nth-child(11) .white-band {
+  padding: 23px 0;
+  background: #fff;
+}
+.cards .card-12 img, .cards .card:nth-child(12) img {
+  margin-top: 30px;
+  margin-bottom: 96px;
+}
+.cards .card {
+  text-align: center;
+  border: none;
+  background: #fff;
+  margin: 13px;
+  height: 100%;
+  width: 300px;
+  padding: 20px;
+}
+.cards .card p {
+  font-size: 12px;
+  color: #999999;
+}
+.cards .card .h3 {
+  font-size: 20px;
+  color: #000;
+  padding: 0;
+  margin: 0;
+  padding: 10px 0;
+  font-weight: 900;
+}
+.cards .card .card-text {
+  font-size: 15px;
+  padding-top: 30px;
+  color: #464646;
+  font-weight: lighter;
+}
+.cards .card .button1 {
+  border: none;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  background: #fff;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.cards .card .button2 {
+  border: none;
+  border-left: 1px solid silver;
+  border-right: 1px solid silver;
+  background: #fff;
+  margin-bottom: 40px;
+}
+.cards .card input {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-size: 11px;
+}
+.cards .card i {
+  font-size: 10px;
+  padding: 0 5px;
+}
+.cards .card span {
+  border-top: 1px solid silver;
+  padding-top: 15px;
+}
+.cards .card .fa-pencil-alt, .cards .card .fa-image, .cards .card .fa-music {
+  font-size: 25px;
+  padding-bottom: 30px;
+  margin-top: -30px;
+}
+.cards .card .fa-quote-right {
+  margin-bottom: 10px;
+  margin-top: -30px;
+  color: #000;
+  font-size: 20px;
+}
+.cards .card .fa-link {
+  color: #000;
+  font-size: 25px;
+  padding-bottom: 30px;
+  margin-top: -15px;
+}
+.cards .card .fa-windows {
+  font-size: 25px;
+  margin-top: -10px;
+  color: #000;
+}
+
+.footer {
+  background: #212429;
+  padding-bottom: 50px;
+  color: #fff;
+  line-height: 1.4;
+}
+.footer .h4 {
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 20px;
+}
+.footer .about .autograph {
+  margin-top: 10px;
+  background: #3a3c49;
+  height: 120px;
+  min-width: 230px;
+}
+.footer .about .autograph p {
+  font-size: 30px;
+  font-family: "Mrs Saint Delafield", cursive;
+  transform: rotate(-14deg);
+  padding-top: 27%;
+  padding-left: 50%;
+}
+.footer .tweets p {
+  font-weight: 100;
+}
+.footer .tweets i {
+  font-size: 10px;
+  margin-right: 7px;
+}
+.footer .tweets .tweet-1 {
+  margin-top: 10px;
+  padding-bottom: 30px;
+  margin-left: 15px;
+}
+.footer .tweets .tweet-2 {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.footer .instagram {
+  max-width: 400px;
+}
+.footer .instagram .instagram-blog .insta-1 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .instagram .instagram-blog .insta-2 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .instagram .instagram-blog .insta-3 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .instagram .instagram-blog .insta-4 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .instagram .instagram-blog .insta-5 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .instagram .instagram-blog .insta-6 {
+  height: 88px;
+  width: 100px;
+  background: #fff;
+  border: 0.1em solid black;
+  float: left;
+}
+.footer .comment .band {
+  margin: 7px 0;
+  border-top: 1px solid #65676a;
+}
+.footer .comment .commentator {
+  padding: 0;
+  padding-bottom: 10px;
+}
+
+.copyright {
+  text-transform: uppercase;
+  text-align: center;
+  color: #808081;
+  background: #17191c;
+  padding: 8px;
+}
+
+@media screen and (min-width: 1920px) {
+  .header-text {
+    font-size: 40px !important;
+  }
+  .header-text .h1 {
+    font-size: 60px !important;
+  }
+  .switching {
+    font-size: 20px !important;
+  }
+  .switching .square {
+    width: 17px !important;
+    height: 17px !important;
+  }
+}
+@media screen and (max-width: 1040px) {
+  .container:nth-child(2) {
+    width: 450px;
+    float: right;
+    display: flex;
+    transform: rotate(-90deg);
+    font-size: 14px;
+    letter-spacing: 3px;
+  }
+  .container:nth-child(2) .fa-long-arrow-alt-left {
+    padding-right: 10px;
+  }
+  .container:nth-child(2) .fa-long-arrow-alt-right {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    background: #f7f7f7;
+    padding-top: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .subscribe .col-xl-3 {
+    margin-left: 0;
+  }
+  .subscribe .h2 {
+    font-size: 23px;
+    font-family: "Hind";
+    flex-weight: lighter;
+    max-width: 100px;
+    color: #212121;
+    margin-right: 30px;
+    margin: 0 auto;
+  }
+  .subscribe input {
+    background: #fff;
+    border: none;
+    padding-right: 50px;
+    padding-left: 10px;
+    height: 50px;
+    margin: 10px 0;
+  }
+  .subscribe button {
+    border: none;
+    background: #212121;
+    color: #fff;
+    padding-top: 60px;
+    padding: 5px 30px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .footer .about .autograph p {
+    font-size: 24px;
+    padding-top: 30%;
+    padding-left: 46%;
+  }
+  .footer .instagram .instagram-blog .insta-1 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-2 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-3 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-4 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-5 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-6 {
+    height: 61px;
+    width: 70px;
+  }
+  .card {
+    margin-top: 20px !important;
+  }
+}
+@media screen and (max-width: 1303px) {
+  .cards {
+    background: #f9f9fb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+  }
+  .cards .row {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .card-2, .cards .card:nth-child(2) {
+    margin-top: 100px;
+  }
+  .cards .card-4 {
+    padding-bottom: 500px;
+  }
+  .cards .card-5, .cards .card:nth-child(5) {
+    margin-top: -30px;
+    padding-bottom: 500px;
+  }
+  .cards .card-6 {
+    background: #212429;
+    margin-top: 40px;
+  }
+  .cards .card-6 p.card-text {
+    color: #fff;
+    font-weight: 100;
+  }
+  .cards .card-6 div p {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cards .card-7, .cards .card:nth-child(7) {
+    box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89);
+    padding-top: 300px;
+    margin-top: 60px;
+  }
+  .cards .card-9, .cards .card:nth-child(9) {
+    background-image: url("../../img/Card-BG-A.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+  }
+  .cards .card-9 .button1, .cards .card:nth-child(9) .button1 {
+    background: transparent;
+    margin-bottom: 0;
+  }
+  .cards .card-9 input, .cards .card:nth-child(9) input {
+    background: transparent;
+  }
+  .cards .card-10, .cards .card:nth-child(10) {
+    margin-top: 30px;
+  }
+  .cards .card-10 .card-text, .cards .card:nth-child(10) .card-text {
+    padding-bottom: 40px;
+  }
+  .cards .card-11, .cards .card:nth-child(11) {
+    margin-top: -50px;
+    background: #212429;
+    color: #fff;
+    padding: 0;
+    padding-bottom: 217px;
+  }
+  .cards .card-11 a, .cards .card:nth-child(11) a {
+    font-family: "Hind Light";
+    color: #fff;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  .cards .card-11 .white-band, .cards .card:nth-child(11) .white-band {
+    padding: 23px 0;
+    background: #fff;
+  }
+  .cards .card-12, .cards .card:nth-child(12) {
+    margin-top: -100px;
+  }
+  .cards .card-12 img, .cards .card:nth-child(12) img {
+    margin-top: 30px;
+    margin-bottom: 96px;
+  }
+}
+@media screen and (max-width: 1092px) {
+  .cards {
+    background: #f9f9fb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+  }
+  .cards .row {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .card-2, .cards .card:nth-child(2) {
+    margin-top: 100px;
+  }
+  .cards .card-4 {
+    padding-bottom: 500px;
+  }
+  .cards .card-5, .cards .card:nth-child(5) {
+    margin-top: -30px;
+    padding-bottom: 500px;
+  }
+  .cards .card-6 {
+    background: #212429;
+    margin-top: 40px;
+  }
+  .cards .card-6 p.card-text {
+    color: #fff;
+    font-weight: 100;
+  }
+  .cards .card-6 div p {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cards .card-7, .cards .card:nth-child(7) {
+    box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89);
+    padding-top: 300px;
+  }
+  .cards .card-9, .cards .card:nth-child(9) {
+    background-image: url("../../img/Card-BG-A.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .cards .card-9 .button1, .cards .card:nth-child(9) .button1 {
+    background: transparent;
+    margin-bottom: 0;
+  }
+  .cards .card-9 input, .cards .card:nth-child(9) input {
+    background: transparent;
+  }
+  .cards .card-10, .cards .card:nth-child(10) {
+    margin-top: 0;
+  }
+  .cards .card-10 .card-text, .cards .card:nth-child(10) .card-text {
+    padding-bottom: 40px;
+  }
+  .cards .card-11, .cards .card:nth-child(11) {
+    background: #212429;
+    color: #fff;
+    padding: 0;
+    padding-bottom: 217px;
+    margin-top: 0;
+  }
+  .cards .card-11 a, .cards .card:nth-child(11) a {
+    font-family: "Hind Light";
+    color: #fff;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  .cards .card-11 .white-band, .cards .card:nth-child(11) .white-band {
+    padding: 23px 0;
+    background: #fff;
+  }
+  .cards .card-12, .cards .card:nth-child(12) {
+    margin-top: -100px;
+  }
+  .cards .card-12 img, .cards .card:nth-child(12) img {
+    margin-top: 30px;
+    margin-bottom: 96px;
+  }
+}
+@media screen and (max-width: 793px) {
+  .cards {
+    background: #f9f9fb;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    line-height: 1.5;
+  }
+  .cards .row {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .card-2, .cards .card:nth-child(2) {
+    margin-top: 100px;
+  }
+  .cards .card-4 {
+    padding-bottom: 500px;
+    margin-bottom: 80px;
+  }
+  .cards .card-5, .cards .card:nth-child(5) {
+    padding-bottom: 500px;
+  }
+  .cards .card-6 {
+    background: #212429;
+    margin-top: 40px;
+  }
+  .cards .card-6 p.card-text {
+    color: #fff;
+    font-weight: 100;
+  }
+  .cards .card-6 div p {
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .cards .card-7, .cards .card:nth-child(7) {
+    box-shadow: 0px 7px 12px 0px rgba(50, 50, 50, 0.89);
+    padding-top: 300px;
+    margin-bottom: 40px;
+  }
+  .cards .card-9, .cards .card:nth-child(9) {
+    background-image: url("../../img/Card-BG-A.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .cards .card-9 .button1, .cards .card:nth-child(9) .button1 {
+    background: transparent;
+    margin-bottom: 0;
+  }
+  .cards .card-9 input, .cards .card:nth-child(9) input {
+    background: transparent;
+  }
+  .cards .card-10, .cards .card:nth-child(10) {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  .cards .card-10 .card-text, .cards .card:nth-child(10) .card-text {
+    padding-bottom: 40px;
+  }
+  .cards .card-11, .cards .card:nth-child(11) {
+    background: #212429;
+    color: #fff;
+    padding: 0;
+    padding-bottom: 217px;
+    margin-top: 0;
+    margin-bottom: 150px;
+  }
+  .cards .card-11 a, .cards .card:nth-child(11) a {
+    font-family: "Hind Light";
+    color: #fff;
+    font-weight: 100;
+    text-decoration: underline;
+    font-size: 16px;
+    padding-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  .cards .card-11 .white-band, .cards .card:nth-child(11) .white-band {
+    padding: 23px 0;
+    background: #fff;
+  }
+  .cards .card-12, .cards .card:nth-child(12) {
+    margin-top: -100px;
+  }
+  .cards .card-12 img, .cards .card:nth-child(12) img {
+    margin-top: 30px;
+    margin-bottom: 96px;
+  }
+}
+@media screen and (max-width: 1076px) {
+  .footer p {
+    font-size: 13px;
+  }
+  .footer .about p {
+    font-size: 13px;
+  }
+  .footer .about .autograph {
+    margin-top: 10px;
+    background: #3a3c49;
+    height: 100px;
+    min-width: 120px;
+  }
+  .footer .about .autograph p {
+    font-size: 20px;
+    font-family: "Mrs Saint Delafield", cursive;
+    transform: rotate(-14deg);
+    padding-top: 27%;
+    padding-left: 50%;
+  }
+  .tweets span {
+    font-size: 15px;
+  }
+  .tweets p {
+    font-size: 13px;
+    font-weight: 100;
+  }
+  .tweets i {
+    display: none;
+    font-size: 5px;
+    margin-right: 7px;
+  }
+  .tweets .tweet-1 {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+  }
+  .tweets .tweet-2 {
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .instagram .instagram-blog {
+    max-width: 200px;
+    max-height: 100px;
+  }
+  .instagram .instagram-blog .insta-1 {
+    height: 42.7px;
+    width: 49px;
+  }
+  .instagram .instagram-blog .insta-2 {
+    height: 42.7px;
+    width: 49px;
+  }
+  .instagram .instagram-blog .insta-3 {
+    height: 42.7px;
+    width: 70px;
+  }
+  .instagram .instagram-blog .insta-4 {
+    height: 42.7px;
+    width: 49px;
+  }
+  .instagram .instagram-blog .insta-5 {
+    height: 42.7px;
+    width: 49px;
+  }
+  .instagram .instagram-blog .insta-6 {
+    height: 42.7px;
+    width: 49px;
+  }
+}
+@media screen and (max-width: 844px) {
+  .footer p {
+    font-size: 13px;
+    background: #212429;
+    padding-bottom: 50px;
+    color: #fff;
+    line-height: 1.4;
+  }
+  .footer .h4 {
+    padding-bottom: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+  }
+  .footer .about .autograph {
+    margin-top: 10px;
+    background: #3a3c49;
+    height: 100px;
+    min-width: 120px;
+    max-width: 300px;
+  }
+  .footer .about .autograph p {
+    font-size: 25px;
+    font-family: "Mrs Saint Delafield", cursive;
+    transform: rotate(-14deg);
+    padding-top: 20%;
+    padding-left: 55%;
+  }
+  .footer .tweets p {
+    font-weight: 100;
+  }
+  .footer .tweets i {
+    font-size: 10px;
+    margin-right: 7px;
+  }
+  .footer .tweets .tweet-1 {
+    margin-top: 10px;
+    padding-bottom: 30px;
+    margin-left: 15px;
+  }
+  .footer .tweets .tweet-2 {
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  .footer .instagram .instagram-blog {
+    max-width: 250px;
+    max-height: 300px;
+  }
+  .footer .instagram .instagram-blog .insta-1 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-2 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-3 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-4 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-5 {
+    height: 61px;
+    width: 70px;
+  }
+  .footer .instagram .instagram-blog .insta-6 {
+    height: 61px;
+    width: 70px;
+  }
+}
+@media screen and (max-width: 735px) {
+  .footer p {
+    font-size: 13px;
+  }
+  .footer .about p {
+    font-size: 13px;
+  }
+  .footer .about .autograph {
+    margin-top: 10px;
+    background: #3a3c49;
+    height: 100px;
+    min-width: 120px;
+  }
+  .footer .about .autograph p {
+    font-size: 25px;
+    font-family: "Mrs Saint Delafield", cursive;
+    transform: rotate(-14deg);
+    padding-top: 27%;
+    padding-left: 50%;
+  }
+  .switching {
+    display: none;
+  }
+  button.facb {
+    display: none;
+  }
+  button.twit {
+    display: none;
+  }
+  button.tub {
+    display: none;
+  }
+  button.wifi {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
